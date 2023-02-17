@@ -10,4 +10,5 @@ function InsertPoints() {
 } else {
   localStorage.setItem =('01', 0);
 }
+//
   }
