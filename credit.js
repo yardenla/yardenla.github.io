@@ -1,18 +1,13 @@
 function InsertPoints() {
-  // set key
-localStorage.cardOne = 0;
-
-// get key
-alert( localStorage.cardOne ); // 0
-
+  if (localStorage['01']) {
+    console.log('dsds')
+    var points = parseInt(localStorage.getItem('01'));
+    console.log(points);
+    console.log(localStorage.getItem('01'));
+   // points = points+1;
+    localStorage.setItem('01',points);
+    console.log(localStorage.getItem('01'));
+} else {
+  localStorage.setItem =('01', 0);
 }
-
-function creditPoints() {
-  if (localStorage.clickcount) {
-    localStorage.clickcount = Number(localStorage.clickcount)+1;
-  } else {
-    localStorage.clickcount = 1;
   }
-  document.getElementById("demo").innerHTML = localStorage.clickcount;
-}
-//hhh
