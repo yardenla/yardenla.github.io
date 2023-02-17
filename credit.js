@@ -1,5 +1,17 @@
 function InsertPoints() {
-  window.localStorage.setItem("01", "0");
-  window.localStorage.setItem("02", "0");
-  window.localStorage.setItem("03", "0");
+  // set key
+localStorage.cardOne = 0;
+
+// get key
+alert( localStorage.cardOne ); // 0
+
+}
+
+function creditPoints() {
+  if (localStorage.clickcount) {
+    localStorage.clickcount = Number(localStorage.clickcount)+1;
+  } else {
+    localStorage.clickcount = 1;
+  }
+  document.getElementById("demo").innerHTML = localStorage.clickcount;
 }
