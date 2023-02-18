@@ -81,3 +81,7 @@ a {
   font-size: large;
   font-weight: bold;
 }
+
+#reader{
+  width: 600px;
+}

@@ -4,14 +4,16 @@
     <link href=".\style.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8" />
     <title>Purim Bingo</title>
+    <script src="node_modules/html5-qrcode/html5-qrcode.min.js"></script>
   </head>
 
   <body id="body">
     <h1>הטענת שוברים</h1>
-    <a href=".\bingo.html"
-      ><button id="bingo" class="button button1">למשחק בינגו</button></a
-    >
+    <button id="checkcredit" class="button button1" onclick="CheckPoints()">
+      בדיקת יתרה
+    </button>
     <p></p>
+    <div id="reader" width="600px"></div>
     <button id="credit" class="button button1" onclick="InsertPoints()">
       הטענת כרטיס
     </button>
