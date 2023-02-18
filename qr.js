@@ -23,6 +23,7 @@ qrcode.callback = (res) => {
     qrResult.hidden = false;
 
     canvasElement.hidden = true;
+    alert(res);
   }
 };
 scanIcon.onclick = () => {
