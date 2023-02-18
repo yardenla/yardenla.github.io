@@ -82,39 +82,32 @@ a {
   font-weight: bold;
 }
 
-.scan-body {
+#container {
   text-align: center;
-  margin: 40px auto;
-  font-size: 40px;
+  margin: 0;
 }
 
-.scan-icon {
-  font-size: 100px;
-  border: solid 1px #000;
-  padding: 25px 20px 20px 20px;
-  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
-}
-
-.qr-canvas {
-  position: absolute;
-  left: 0;
-  margin: 0 auto;
-  width: 100%;
+#qr-canvas {
+  margin: auto;
+  width: calc(100% - 20px);
   max-width: 400px;
 }
+
+#btn-scan-qr {
+  cursor: pointer;
+}
+
+#btn-scan-qr img {
+  height: 10em;
+  padding: 15px;
+  margin: 15px;
+  background: white;
+}
+
 #qr-result {
   font-size: 1.2em;
   margin: 20px auto;
   padding: 20px;
   max-width: 700px;
-  background-color: #fff;
-}
-
-.camera {
-  text-align: center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-25%, -50%);
-  font-size: 40px;
+  background-color: white;
 }
