@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta
-      name="viewport"
-      content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"
-      charset="utf-8"
-    />
+    <meta charset="utf-8" />
     <link href=".\style.css" rel="stylesheet" type="text/css" />
     <title>Purim Bingo</title>
   </head>
@@ -19,22 +15,7 @@
     <button id="credit" class="button button1" onclick="InsertPoints()">
       הטענת כרטיס
     </button>
-    <div id="container">
-      <h1 style="font-size: medium">QR Code Scanner 1</h1>
 
-      <a id="btn-scan-qr">
-        <img
-          src="https://uploads.sitepoint.com/wp-content/uploads/2017/07/1499401426qr_icon.svg"
-        />
-      </a>
-
-      <canvas hidden="" id="qr-canvas"></canvas>
-
-      <div id="qr-result" hidden="">
-        <b>Data:</b> <span id="outputData"></span>
-      </div>
-    </div>
-    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
     <script type="text/javascript" src=".\qr.js"></script>
     <script type="text/javascript" src=".\credit.js"></script>
   </body>
