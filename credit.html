@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl" lang="he">
   <head>
     <meta charset="utf-8" />
     <link href=".\style.css" rel="stylesheet" type="text/css" />
@@ -11,12 +11,14 @@
     <button id="checkcredit" class="button button1" onclick="CheckPoints()">
       בדיקת יתרה
     </button>
+    <div id="checkPointsResult" style="font-family: 'alef'"></div>
     <p></p>
     <button id="credit" class="button button1" onclick="InsertPoints()">
       הטענת כרטיס
     </button>
+    <p></p>
+    <a onclick="CleanLocalStorage()" href="#">ניקוי נתונים
 
-    <script type="text/javascript" src=".\qr.js"></script>
     <script type="text/javascript" src=".\credit.js"></script>
   </body>
 </html>
