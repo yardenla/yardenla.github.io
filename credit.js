@@ -38,7 +38,6 @@ function InsertPoints() {
       "הטענת את הכרטיס ב-" + newPoints + " נקודות. יש לך " + points + " נקודות";
     // alert results
     alert(msg);
-
   }
 }
 
@@ -64,10 +63,13 @@ function CheckPoints() {
 }
 
 function CleanLocalStorage() {
-  // clear local storage data
-  window.localStorage.clear();
-  points = 0;
-  newPoints = 0;
-  // give success msg
-  alert("נתונים נוקו בהצלחה");
+  let response = confirm("בטוח שאת.ה רוצה למחוק את הנתונים?");
+  if (response == true) {
+    // clear local storage data
+    window.localStorage.clear();
+    points = 0;
+    newPoints = 0;
+    // give success msg
+    alert("נתונים נוקו בהצלחה");
+  }
 }
