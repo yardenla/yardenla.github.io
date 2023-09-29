@@ -3,17 +3,48 @@
   <head>
     <link href=".\style.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8" />
-    <title>Purim Bingo</title>
+    <title>Login</title>
   </head>
 
+  <!-- change to login screen!-->
   <body id="body">
-    <h1>פורימון 2023</h1>
-    <a href=".\bingo.html"
-      ><button id="bingo" class="button button1">למשחק בינגו</button></a
-    >
-    <p></p>
-    <a href=".\credit.html"
-      ><button id="credit" class="button button1">להטענת כרטיסים</button></a
-    >
+    <h1>Login</h1>
+
+    <div id="login-error-msg-holder">
+      <div id="login-error-msg" style="opacity: 0; font-size: 15px; color: red">
+        שם משתמש <span id="error-msg-second-line">או סיסמה לא נכונה</span>
+      </div>
+    </div>
+    <form id="form" action="welcome.html" method="post">
+      <div class="container">
+        <div>
+          <label for="username"><b>שם משתמש</b></label>
+          <br />
+          <input
+            id="username"
+            type="text"
+            placeholder="Enter Username"
+            name="username"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="password"><b>סיסמה</b></label>
+          <br />
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            required
+          />
+        </div>
+        <br />
+
+        <button id="submit" type="submit">כניסה</button>
+      </div>
+    </form>
+    <script type="text/javascript" src=".\login.js"></script>
   </body>
 </html>

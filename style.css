@@ -7,6 +7,11 @@ body {
   text-align: center;
   font-size: 25pt;
 }
+
+label {
+  font-size: 0.7em;
+}
+
 img {
   width: 10%;
   height: 10%;
