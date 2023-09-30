@@ -20,7 +20,7 @@ solveBtn.addEventListener("click", (e) => {
     num3.value === "6" &&
     num4.value === "~"
   ) {
-    answer.innerHTML = "כל הכבוד לכם, הצלחתם לעצור אותי. מזל של מתחילים...";
+    alert("כל הכבוד לכם, הצלחתם לעצור אותי. מזל של מתחילים...");
   } else {
     loginErrorMsg.style.opacity = 1;
     num1.style.color = "red";
