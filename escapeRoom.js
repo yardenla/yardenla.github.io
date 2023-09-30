@@ -1,6 +1,7 @@
 const solveBtn = document.getElementById("solve-button");
 const puzzleForm = document.getElementById("puzzle-form");
 const loginErrorMsg = document.getElementById("puzzle-error-msg");
+const answer = document.getElementById("answer");
 const num1 = puzzleForm.num1;
 const num2 = puzzleForm.num2;
 const num3 = puzzleForm.num3;
@@ -15,11 +16,11 @@ solveBtn.addEventListener("click", (e) => {
   console.log(num1.value + num2.value + num3.value + num4.value);
   if (
     num1.value === "1" &&
-    num2.value === "2" &&
-    num3.value === "3" &&
-    num4.value === "4"
+    num2.value === "7" &&
+    num3.value === "6" &&
+    num4.value === "~"
   ) {
-    alert("You have successfully logged in.");
+    answer.innerHTML = "כל הכבוד לכם, הצלחתם לעצור אותי. מזל של מתחילים...";
   } else {
     loginErrorMsg.style.opacity = 1;
     num1.style.color = "red";

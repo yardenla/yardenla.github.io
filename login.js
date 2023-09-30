@@ -12,7 +12,7 @@ loginButton.addEventListener("click", (e) => {
     window.open("./bingo.html", "_self");
     //location.reload();
     
-  } else if (username === "shalom" && password === "12345") {
+  } else if (username === "kinguk" && password === "genuis!89") {
     window.open("./escapebox.html", "_self");
 
   } else {
