@@ -16,6 +16,7 @@ img {
   width: 10%;
   height: 10%;
 }
+
 .chosenImg {
   width: 25%;
   height: 25%;
@@ -115,4 +116,25 @@ a {
   padding: 20px;
   max-width: 700px;
   background-color: white;
+}
+
+.hat {
+  width: 20%;
+  height: 20%;
+}
+
+#code-container input {
+  width: 20%;
+  height: 150px;
+  font-size: larger;
+}
+
+#code-container ul {
+  align-content: center;
+}
+
+#code-container button {
+  width: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
