@@ -12,43 +12,51 @@
     <div id="code-container">
       <div
         id="puzzle-error-msg"
-        style="opacity: 0; font-size: 15px; color: red; padding-top: 15px;"
+        style="opacity: 0; font-size: 15px; color: red; padding-top: 15px"
       >
         <span id="error-msg-second-line">קוד לא נכון, נסו שוב</span>
       </div>
       <form dir="rtl" id="puzzle-form">
         <ul>
           <input
+            class="puzzle-input"
             id="num4"
             type="text"
             placeholder="0"
             name="num4"
             required
             maxlength="1"
+            onfocus="changeBack()"
           />
           <input
+            class="puzzle-input"
             id="num3"
             type="text"
             placeholder="0"
             name="num3"
             required
             maxlength="1"
+            onfocus="changeBack()"
           />
           <input
+            class="puzzle-input"
             id="num2"
             type="text"
             placeholder="0"
             name="num2"
             required
             maxlength="1"
+            onfocus="changeBack()"
           />
           <input
+            class="puzzle-input"
             id="num1"
             type="text"
             placeholder="0"
             name="num1"
             required
             maxlength="1"
+            onfocus="changeBack()"
           />
         </ul>
         <button type="submit" id="solve-button">שלח</button>
