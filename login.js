@@ -11,10 +11,11 @@ loginButton.addEventListener("click", (e) => {
     //alert("You have successfully logged in.");
     window.open("./bingo.html", "_self");
     //location.reload();
-    
-  } else if (username === "kinguk" && password === "genius!89") {
+  } else if (
+    username.toLowerCase() === "kinguk" &&
+    password.toLowerCase() === "genius!89"
+  ) {
     window.open("./escapebox.html", "_self");
-
   } else {
     loginErrorMsg.style.opacity = 1;
   }
